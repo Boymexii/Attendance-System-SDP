@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 24, 2017 at 01:36 PM
+-- Generation Time: Apr 25, 2017 at 10:27 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -113,8 +113,8 @@ INSERT INTO `subject_table` (`subject_no`, `subject_name`, `teacher_name`, `seme
 
 CREATE TABLE `tbl_attendance` (
   `attID` int(11) NOT NULL,
-  `StudentRollNumber` int(11) NOT NULL,
-  `SubjectId` int(11) NOT NULL,
+  `StudentRollNumber` varchar(11) NOT NULL,
+  `SubjectId` varchar(11) NOT NULL,
   `attendance` varchar(11) NOT NULL,
   `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -124,7 +124,7 @@ CREATE TABLE `tbl_attendance` (
 --
 
 INSERT INTO `tbl_attendance` (`attID`, `StudentRollNumber`, `SubjectId`, `attendance`, `date`) VALUES
-(6, 2, 3, 'P', '2017-04-24 03:54:01');
+(10, 'A00018619', 'CIE106', 'A', '2017-04-25 21:31:19');
 
 --
 -- Indexes for dumped tables
@@ -183,7 +183,7 @@ ALTER TABLE `subject_table`
 -- AUTO_INCREMENT for table `tbl_attendance`
 --
 ALTER TABLE `tbl_attendance`
-  MODIFY `attID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `attID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,37 @@
+.login{
+    display: none !important;
+  }
+
+  .login-form{
+    width: 40%;
+    margin: 0px auto;
+  }
+
+.form-control {
+  display: block;
+  width: 100%!important;}
+
+.form-multiline .form-group {
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+.form-multiline label,
+.form-multiline .form-control {
+    margin-right: 15px;
+}
+ .f {
+            float: right;
+        }
+ .btn-lg {
+    padding: 10px 14px;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 4px;
+  }
+
+ .btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
